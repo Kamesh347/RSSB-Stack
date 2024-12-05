@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RADHA SOAMI SATSANG BEAS Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>RADHA SOAMI SATSANG BEAS, AHQ- Pithampur (Area-Dhar)</h2>
+        <p>Details of weekly satsang</p>
+
+        <form id="satsangForm">
+            <div class="form-group">
+                <label for="fullName">Your Full Name (आपका पुरा नाम) *</label>
+                <label for="sewadarName">Full name of the Sewadar who provided this information (यह जानकारी प्रदान करने वाले सेवादार का पूरा नाम) *</label>
+                <input type="text" id="fullName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="satsangDate">Satsang Date (सत्संग  दिनांक) *</label>
+                <input type="date" id="satsangDate" required>
+            </div>
+
+            <div class="form-group">
+                <label for="satsangPlace">Name of Satsang Place (सत्संग घर का नाम) *</label>
+                <select id="satsangPlace" required>
+                    <option value="">Select a place</option>
+                    <option value="Bagdi SP">Bagdi SP (बगड़ी)</option>
+                    <option value="Bakthpura SP">Bakthpura SP (बखतपुरा)</option>
+                    <option value="Banderi SP">Banderi SP (बान्देडी)</option>
+                    <option value="Barjhar SP">Barjhar SP (बरझर)</option>
+                    <option value="Bhimfaliya SP">Bhimfaliya SP (भीमफलिया)</option>
+                    <option value="Bhulgaon SP">Bhulgaon SP (भुलगाॅव)</option>
+                    <option value="Bidwal C">Bidwal C (बीडवाल)</option>
+                    <option value="Dhamnod SP">Dhamnod SP (धामनोद)</option>
+                    <option value="Dhar C">Dhar C (धार)</option>
+                    <option value="Indrapur SP">Indrapur SP (इंद्रपुर)</option>
+                    <option value="Kanwan SC">Kanwan SC (कानवन)</option>
+                    <option value="Karvad SP">Karvad SP (करवड़)</option>
+                    <option value="Katthiwada SC">Katthiwada SC (कट्ठीवाड़ा)</option>
+                    <option value="Khadki SP">Khadki SP (खड़की)</option>
+                    <option value="Khedi SP">Khedi SP (खेड़ी)</option>
+                    <option value="Kherwas SP">Kherwas SP (खेरवास)</option>
+                    <option value="Meghnagar SP">Meghnagar SP (मेघनगर)</option>
+                    <option value="Nagda SC">Nagda SC (नागदा)</option>
+                    <option value="Pipliya SP">Pipliya SP (पिपल्या)</option>
+                    <option value="Piprideb SP">Piprideb SP (पिपरीडेब)</option>
+                    <option value="Pithampur C- AHQ">Pithampur C- AHQ (पिथमपुर)</option>
+                    <option value="Rajgarh SC">Rajgarh SC (राजगढ़)</option>
+                    <option value="Sakad SP">Sakad SP (साकड़)</option>
+                    <option value="Sandla C">Sandla C (संदला)</option>
+                    <option value="Sendhwa SP">Sendhwa SP (सेंधवा)</option>
+                    <option value="Upari C">Upari C (उपडी)</option>
+                    <option value="Wadlipada SP">Wadlipada SP (वडलीपाड़ा)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="sangatMale">Sangat Male (पुरुष संगत) *</label>
+                <input type="number" id="sangatMale" required>
+            </div>
+
+            <div class="form-group">
+                <label for="sangatFemale">Sangat Female (संगत महिला) *</label>
+                <input type="number" id="sangatFemale" required>
+            </div>
+
+            <div class="form-group">
+                <label for="children">Children (बच्चे) *</label>
+                <input type="number" id="children" required>
+            </div>
+
+            <div class="form-group">
+                <label for="cycle">Cycle (साइकिल) *</label>
+                <input type="number" id="cycle" required>
+            </div>
+
+            <div class="form-group">
+                <label for="twoWheeler">2 Wheeler (2 पहिया) *</label>
+                <input type="number" id="twoWheeler" required>
+            </div>
+
+            <div class="form-group">
+                <label for="fourWheeler">4 Wheeler (4 पहिया) *</label>
+                <input type="number" id="fourWheeler" required>
+            </div>
+
+            <div class="form-group">
+                <label for="otherWheeler">Other Wheeler (अन्य व्हीलर) *</label>
+                <input type="number" id="otherWheeler" required>
+            </div>
+
+            <div class="form-group">
+                <label for="sewadarMale">Sewadar Male (पुरुष सेवादार) *</label>
+                <input type="number" id="sewadarMale" required>
+            </div>
+
+            <div class="form-group">
+                <label for="sewadarFemale">Sewadar Female (महिला सेवादार) *</label>
+                <input type="number" id="sewadarFemale" required>
+            </div>
+
+            <div class="form-group">
+                <label for="satsangType">Type of Satsang (सत्संग का प्रकार) *</label>
+                <select id="satsangType" onchange="showSection()" required>
+                    <option value="">Select type</option>
+                    <option value="Satsang Karta">Satsang Karta (सत्संग कर्ता)</option>
+                    <option value="Satsang Reader">Satsang Reader (सत्संग रीडर)</option>
+                    <option value="Audio CD Punjabi">Audio CD Punjabi (ऑडियो सीडी पंजाबी)</option>
+                    <option value="Audio CD Hindi">Audio CD Hindi (ऑडियो सीडी हिंदी)</option>
+                    <option value="Video CD">Video CD (वीडियो सीडी)</option>
+                </select>
+            </div>
+
+            <!-- Section for Satsang Karta -->
+            <div id="sectionKarta" class="form-section hidden">
+                <h3>Section for Satsang Karta</h3>
+                <div class="form-group">
+                    <label for="shabadKarta">Shabad (शब्द) *</label>
+                    <input type="text" id="shabadKarta">
+                </div>
+                <div class="form-group">
+                    <label for="nameKarta">Name of Satsang Karta (सत्संग कर्ता का नाम) *</label>
+                    <input type="text" id="nameKarta">
+                </div>
+                <div class="form-group">
+                    <label for="namePathiKarta">Name of Pathi (पाठी का नाम) *</label>
+                    <input type="text" id="namePathiKarta">
+                </div>
+                <div class="form-group">
+                    <label for="remarkKarta">Remark or Suggestion (टिप्पणी या सुझाव)</label>
+                    <textarea id="remarkSuggestion" rows="4"></textarea>
+                </div>
+            </div>
+
+            <!-- Section for Satsang Reader -->
+            <div id="sectionReader" class="form-section hidden">
+                <h3>Section for Satsang Reader</h3>
+                <div class="form-group">
+                    <label for="shabadReader">Shabad (शब्द) *</label>
+                    <input type="text" id="shabadReader">
+                </div>
+                <div class="form-group">
+                    <label for="nameReader">Name of Satsang Reader (सत्संग रीडर का नाम) *</label>
+                    <input type="text" id="nameReader">
+                </div>
+                <div class="form-group">
+                    <label for="namePathiReader">Name of Pathi (पाठी का नाम) *</label>
+                    <input type="text" id="namePathiReader">
+                </div>
+                <div class="form-group">
+                    <label for="remarkReader">Remark or Suggestion (टिप्पणी या सुझाव)</label>
+                    <textarea id="remarkSuggestion" rows="4"></textarea>
+                </div>
+            </div>
+
+            <!-- Section for Audio CD Punjabi -->
+            <div id="sectionAudioPunjabi" class="form-section hidden">
+                <h3>Section for Audio CD Punjabi</h3>
+                <div class="form-group">
+                    <label for="shabadPunjabi">Shabad (शब्द) *</label>
+                    <input type="text" id="shabadPunjabi">
+                </div>
+                <div class="form-group">
+                    <label for="remarkPunjabi">Remark or Suggestion (टिप्पणी या सुझाव)</label>
+                    <textarea id="remarkSuggestion" rows="4"></textarea>
+                </div>
+            </div>
+
+            <!-- Section for Audio CD Hindi -->
+            <div id="sectionAudioHindi" class="form-section hidden">
+                <h3>Section for Audio CD Hindi</h3>
+                <div class="form-group">
+                    <label for="shabadHindi">Shabad (शब्द) *</label>
+                    <input type="text" id="shabadHindi">
+                </div>
+                <div class="form-group">
+                    <label for="remarkHindi">Remark or Suggestion (टिप्पणी या सुझाव)</label>
+                    <textarea id="remarkSuggestion" rows="4"></textarea>
+                </div>
+            </div>
+
+            <!-- Section for Video CD -->
+            <div id="sectionVideo" class="form-section hidden">
+                <h3>Section for Video CD</h3>
+                <div class="form-group">
+                    <label for="shabadVideo">Shabad (शब्द) *</label>
+                    <input type="text" id="shabadVideo">
+                </div>
+                
+                <div class="form-group">
+                    <label for="remarkVideo">Remark or Suggestion (टिप्पणी या सुझाव)</label>
+                    <textarea id="remarkSuggestion" rows="4"></textarea>
+                </div>
+            </div>
+
+            <button type="submit" onclick="getdata()">Submit</button>
+        </form >
+        <div id="output"> </div>
+    </div>
+
+    <script src="scripts.js"></script>
+
+</body>
+</html>
